@@ -43,4 +43,18 @@ cacheSolve <- function(x, ...){
   inve
 }
 
+##running function
+
+> newmatrix <- makeCacheMatrix(matrix(rnorm(10), 2, 2))
+> newmatrix$get() 
+[,1]       [,2]
+[1,] -0.1454236 -0.1949505
+[2,]  0.5858757  0.1371903
+> newmatrix$getinve()
+NULL
+> cacheSolve(mewmatrix)
+[,1]      [,2]
+[1,]  1.455352  2.068088
+[2,] -6.215128 -1.542693
+
 
